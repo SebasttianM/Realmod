@@ -1,4 +1,5 @@
 import React from 'react'
+import Home from '../LandingPage/Home';
 import FormLogin from './FormLogin';
 
 const Login = () => {
