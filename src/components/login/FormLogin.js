@@ -3,7 +3,7 @@ import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FormEmail from './FormEmail';
 import { useDispatch } from 'react-redux';
-import { LoginGoogle } from '../../redux/actions/ActionsLogin';
+import { LoginFacebook, LoginGoogle } from '../../redux/actions/ActionsLogin';
 import Register from './Register';
 
 const FormLogin = () => {
@@ -11,6 +11,9 @@ const FormLogin = () => {
 
     const handleGoogle= ()=>{
         dispatch(LoginGoogle())
+    }
+    const handleFacebook= ()=>{
+        dispatch(LoginFacebook())
     }
 
   return (
@@ -34,6 +37,9 @@ const FormLogin = () => {
                    shadow-caribbean-green-400 bg-opacity-50 text-blue-600 to-blue-400
                 "
                   icon={faFacebook}
+                  onClick={()=>{
+                      handleFacebook()
+                  }}
               />
           </div>
           <hr></hr>

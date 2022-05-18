@@ -1,6 +1,6 @@
 import { async } from "@firebase/util"
 import { signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth"
-import { auth, Google } from "../../firebase/firebaseConfig"
+import { auth, Facebook, Google } from "../../firebase/firebaseConfig"
 import { typesLogin } from "../types/Types"
 
 export const LoginSync= (email, password)=>({
@@ -45,6 +45,18 @@ export const LoginGoogle= ()=>{
         .then((user)=>{
             dispatch(user.email, user.displayName)
 
+        })
+        .catch((error)=>console.error)
+    }
+}
+
+//Login con Facebook 
+
+export const LoginFacebook= ()=>{
+    return async(dispatch)=>{
+        signInWithPopup (auth, Facebook)
+        .then((user)=>{
+            dispatch(user.email, user.displayName)
         })
         .catch((error)=>console.error)
     }
