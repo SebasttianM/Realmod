@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FormEmail from './FormEmail';
 import { useDispatch } from 'react-redux';
 import { LoginGoogle } from '../../redux/actions/ActionsLogin';
+import Register from './Register';
 
 const FormLogin = () => {
     const dispatch= useDispatch()
@@ -37,6 +38,7 @@ const FormLogin = () => {
           </div>
           <hr></hr>
           <FormEmail />
+          <Register />
       </div>
   );
 }
