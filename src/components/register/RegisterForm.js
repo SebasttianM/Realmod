@@ -35,9 +35,14 @@ const RegisterForm = () => {
         dispatch(RegisterAsync(name, email, password));
     };
   return (
-      <div>
-          <h1>Registrate</h1>
-          <section>
+      <div className='flex justify-center flex-col items-center relative '>
+          <div className=' relative mt-8 py-10'>
+           <div className='onePlace font-semibold text-7xl text-center items-center self-center text-caribbean-green-400 
+           opacity-40 absolute -z-10 mt-5'>All in one place</div>
+           <h1 className='text-4xl font-semibold  my-10 mx-auto p-10 top-1/2 left-1/2 z-10 '>Registrate</h1>
+           <img className='w-3/12' src='https://res.cloudinary.com/svartblood/image/upload/v1652913104/realmod/Reallogo_ckdqm4.png'alt=''/>
+          </div>
+          <section className=' w-11/12 h-auto flex justify-center items-center mt-16'>
               <Formik
                   initialValues={{
                       name: "",
@@ -51,56 +56,57 @@ const RegisterForm = () => {
                   }}
               >
                   {({ errors, touched }) => (
-                      <Form>
+                      <Form className='border-2 border-caribbean-green-700 w-8/12 flex justify-center items-center flex-col gap-7
+                      bg-caribbean-green-500 opacity-50 py-5 mb-10 rounded-md'>
                           <Field
                               className="text-center align-middle m-1 w-2/3 mx-auto border-2 border-caribbean-green-500
-                    rounded-lg border-opacity-40"
+                    rounded-lg border-opacity-40 py-4 font-normal text-2xl"
                               name="name"
                               placeholder="Ingresa tu nombre"
                               type="text"
                           />
                           {errors.name && touched.name ? (
-                              <div className="text-red-500 shadow-lg text-center ">
+                              <div className="text-gray-800 font-normal text-2xl shadow-lg text-center ">
                                   {errors.name}
                               </div>
                           ) : null}
                           <Field
                               className="text-center align-middle m-1 w-2/3 mx-auto border-2 border-caribbean-green-500
-                    rounded-lg border-opacity-40"
+                    rounded-lg border-opacity-40 py-4 font-normal text-2xl"
                               name="email"
                               placeholder="Ingresa tu correo"
                               type="email"
                           />
                           {errors.email && touched.email ? (
-                              <div className="text-red-500 shadow-lg text-center ">
+                              <div className="text-gray-800 font-normal text-2xl shadow-lg text-center ">
                                   {errors.email}
                               </div>
                           ) : null}
                           <Field
                               className="text-center align-middle m-1 w-2/3 mx-auto border-2 border-caribbean-green-500
-                    rounded-lg border-opacity-40"
+                    rounded-lg border-opacity-40 py-4 font-normal text-2xl"
                               name="password"
                               placeholder="Ingresa un password"
                               type="password"
                           />
                           {errors.password && touched.password ? (
-                              <div className="text-red-500 shadow-lg text-center ">
+                              <div className="text-gray-800 font-normal text-2xl shadow-lg text-center ">
                                   {errors.password}
                               </div>
                           ) : null}
                           <Field
                               className="text-center align-middle m-1 w-2/3 mx-auto border-2 border-caribbean-green-500
-                    rounded-lg border-opacity-40"
+                    rounded-lg border-opacity-40 py-4 font-normal text-2xl"
                               name="confirmPassword"
-                              placeholder="Ingresa un password"
+                              placeholder="Vuelve a ingresar el password"
                               type="password"
                           />
                           {errors.confirmPassword && touched.confirmPassword ? (
-                              <div className="text-red-500 shadow-lg text-center ">
+                              <div className="text-gray-800 font-normal text-2xl shadow-lg text-center ">
                                   {errors.confirmPassword}
                               </div>
                           ) : null}
-                        <button type='submit'  className=''>Registrarse</button>
+                        <button type='submit'  className='block text-center justify-center btnRegister'>Registrarse</button>
                       </Form>
                   )}
               </Formik>
