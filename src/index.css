@@ -3,107 +3,134 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
 }
 
 .btnLogin {
-  --color: #00c295;
-  font-family: inherit;
-  display: inline-block;
-  width: 90%;
-  line-height: 2.5em;
-  margin: 20px ;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid var(--color);
-  transition: color 0.5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 6px;
-  font-weight: 500;
-  color: var(--color);
+    --color: #00c295;
+    font-family: inherit;
+    display: inline-block;
+    width: 90%;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
 }
 
 .btnLogin:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  background: var(--color);
-  height: 350px;
-  width: 900px;
-  border-radius: 50%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 350px;
+    width: 900px;
+    border-radius: 50%;
 }
 
 .btnLogin:hover {
-  color: #fff;
+    color: #fff;
 }
 
 .btnLogin:before {
-  top: 100%;
-  left: 100%;
-  transition: all 0.7s;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
 }
 
 .btnLogin:hover:before {
-  top: -80px;
-  left: -80px;
+    top: -80px;
+    left: -80px;
 }
 
 .btnLogin:active:before {
-  background: #00c295;
-  transition: background 0s;
+    background: #00c295;
+    transition: background 0s;
 }
 
 /* Sombra Login */
 
-.shadowLogin{
-  box-shadow:
-  7.2px 15.4px 2.2px rgba(0, 0, 0, 0.048),
-  13.1px 28px 5.3px rgba(0, 0, 0, 0.067),
-  18.2px 38.9px 10px rgba(0, 0, 0, 0.082),
-  23.3px 49.9px 17.9px rgba(0, 0, 0, 0.099),
-  31.2px 66.8px 33.4px rgba(0, 0, 0, 0.122),
-  57px 122px 80px rgba(0, 0, 0, 0.18)
-;
-
+.shadowLogin {
+    box-shadow: 7.2px 15.4px 2.2px rgba(0, 0, 0, 0.048),
+        13.1px 28px 5.3px rgba(0, 0, 0, 0.067),
+        18.2px 38.9px 10px rgba(0, 0, 0, 0.082),
+        23.3px 49.9px 17.9px rgba(0, 0, 0, 0.099),
+        31.2px 66.8px 33.4px rgba(0, 0, 0, 0.122),
+        57px 122px 80px rgba(0, 0, 0, 0.18);
 }
 /* One in one place */
 
-.onePlace{
-  font-family: 'Mr Dafoe';
-  font-weight: 500;
-  
-
-
+.onePlace {
+    font-family: "Mr Dafoe";
+    font-weight: 500;
 }
 
 /* btnRegister */
 
-.btnRegister{
-  
-  position: relative;
-  display: inline-block;
-  margin: 15px;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #000000;
-  background-color: #24da42;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  border: 2px solid #81da0d;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #2cb359;
+.btnRegister {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #24da42;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #81da0d;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #2cb359;
 }
 
 button:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #0bf30b;
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #0bf30b;
 }
 
 button:active {
-  transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/* Properties */
+
+.Properties {
+    font-family: "Mr Dafoe", sans-serif;
+    
+    width: 328px;
+    height: 110px;
+    left: 309px;
+    top: 207px;
+
+    font-family: "Mr Dafoe";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 110px;
+
+    color: #e4e7e6;
+}
+.PerfectPlace{
+  width: 552px;
+height: 106px;
+left: 298px;
+top: 287px;
+
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 46px;
+line-height: 53px;
+
+color: #001A14;
+
 }

@@ -2,6 +2,8 @@ import { data } from 'autoprefixer'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { LogOutAsync } from '../../redux/actions/ActionsLogin'
+import Banner from './Banner'
+import NavBar from './NavBar'
 
 const Home = ({dataUserLog}) => {
     const dispatch= useDispatch()
@@ -11,15 +13,8 @@ const Home = ({dataUserLog}) => {
     }
   return (
     <div>
-        <button onClick={()=>{
-            handleLogout()
-        }
-        }>Log Out</button>
-        <div>
-          <h1>{displayName}</h1>
-          <h2>{email}</h2>
-          <img src={photoURL} alt=''/>
-        </div>
+        <NavBar/>
+        <Banner/>
     </div>
   )
 }
