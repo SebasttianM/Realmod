@@ -55,7 +55,7 @@ const Banner = () => {
                         <img className="w-6 h-6 justify-center self-center" src="https://res.cloudinary.com/svartblood/image/upload/v1653087529/realmod/settings_ymb8ib.png"
                         alt=""/>
                         <button
-                            className="bg-caribbean-green-500 justify-center   self-center border-2
+                            className="bg-caribbean-green-500 justify-center   self-center 
                         border-violet-200 w-24 h-12"
                         >
                             <i class="fa-solid fa-magnifying-glass"></i>
