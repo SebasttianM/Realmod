@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
     return (
-        <div className="w-full  absolute cBanner">
+        <div className="w-full cBackground">
             <div
                 className="w-2/4  align-middle  flex flex-col top-52 left-72 
           py-5 mt-16 ml-12 items-center"
@@ -39,7 +39,7 @@ const Banner = () => {
                         placeholder="Enter a Keyword here"
                         className="w-1/2 h-16 text-center"
                     />
-                    <span className="w-0.5 h-6 bg-caribbean-green-500 my-auto"></span>
+                    <span className="w-1 h-6 bg-caribbean-green-500 my-auto"></span>
                     <select className="w-1/2 border-none h-16 text-center cursor-pointer">
                         <option>Select a location</option>
                         <option>Bogota</option>

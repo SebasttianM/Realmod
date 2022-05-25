@@ -3,6 +3,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { LogOutAsync } from '../../redux/actions/ActionsLogin'
 import Banner from './Banner'
+import Listing from './Listing'
 import NavBar from './NavBar'
 
 const Home = ({dataUserLog}) => {
@@ -15,6 +16,7 @@ const Home = ({dataUserLog}) => {
     <div>
         <NavBar/>
         <Banner/>
+        <Listing/>
     </div>
   )
 }

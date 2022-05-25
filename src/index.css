@@ -105,7 +105,7 @@ button:active {
 
 .Properties {
     font-family: "Mr Dafoe", sans-serif;
-    
+
     width: 328px;
     height: 110px;
     left: 309px;
@@ -119,18 +119,39 @@ button:active {
 
     color: #e4e7e6;
 }
-.PerfectPlace{
-  width: 552px;
-height: 106px;
-left: 298px;
-top: 287px;
+.PerfectPlace {
+    width: 552px;
+    height: 106px;
+    left: 298px;
+    top: 287px;
 
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 700;
-font-size: 46px;
-line-height: 53px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 53px;
 
-color: #001A14;
+    color: #001a14;
+}
 
+/* Background landing*/
+
+.cBackground {
+    background-color: #f1f8f6;
+}
+
+.featured {
+    font-family: "Mr Dafoe", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 98px;
+    text-align: center;
+
+    color: #dbeeea;
+
+    width: 220px;
+    height: 98px;
+    left: 549px;
+    top: 0px;
 }
